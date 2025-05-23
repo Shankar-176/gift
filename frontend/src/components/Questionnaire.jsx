@@ -27,7 +27,7 @@ const Questionnaire = ({ onSubmit = (data) => console.log("Received:", data) }) 
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/generate",
+        "https://gift-recommend.onrender.com/api/generate",
         requestData,
         { headers: { "Content-Type": "application/json" } }
       );

@@ -20,7 +20,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const url = "http://localhost:5000/api/users";
+        const url = "https://gift-recommend.onrender.com/api/users";
         await axios.post(url, data);
         navigate("/login");  // ✅ Redirect to login
     } catch (error) {
